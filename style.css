@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1em;
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(204, 43%, 93%);
+}
+
+.container{
+    max-width:635px;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__header{
+    /*display: flex;
+    flex-direction: column;*/
+    padding:40px;
+}
+
+.card__header-title{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 26px;
+    padding-bottom: 26px;
+}
+
+.card__header-subtitle{
+    color:hsl(71, 73%, 54%);
+}
+
+.card__header-details{
+    color: hsl(218, 22%, 67%);
+    line-height: 30px;
+}
+
+.card__sub-price{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.price{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.month{
+    color: hsl(0, 1%, 79%)
+}
+
+.card__footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__sub{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color:hsl(179, 62%, 43%);
+    justify-content: space-between;
+}
+
+.card__sub-title{
+    font-size: 18px;
+}
+
+.card__why{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: hsl(179, 62%, 46%);
+    line-height: 20px;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.card__why-title{
+    padding-bottom: 16px;
+    font-size: 18px;
+}
+
+.card__sub-btn{
+    border: none;
+    padding: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 10px;
+}
+
+.card__why-details{
+    list-style: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 584px){
+    body{
+        min-height: auto;
+    }
+    
+    .card{
+        margin: 20px;
+        grid-template-rows: 1fr;
+    }
+
+    .card__header-subtitle{
+        padding-bottom: 16px;
+    }
+    
+    .card__footer{
+        grid-template-columns: 1fr;
+    }
+
+    .card__sub{
+        gap:10px;
+    }
+
+    .card__sub-details{
+        padding-bottom: 16px;
+    }
+}
+
+footer{
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+}
